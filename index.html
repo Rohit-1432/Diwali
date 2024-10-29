@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+        <title>
+            Document
+        </title>
+        <style>
+            .title{
+                color: green;
+            }
+            body{
+                min-height: 100vh;
+                background-size: cover;
+                background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ_2oII-AssPFNOvcLQ6ecJ6ZWQlUbKU3j8w&s");
+            }
+            .parent-container{
+                border-radius: 10px;
+                background-color: white;
+                width: 36%;
+                padding: 2%;
+                text-align: center;
+                margin: auto;
+                margin-top: 2%;
+                
+
+            }
+            .form-field{
+                margin: 10px;
+            
+            }
+            .form-field input,.form-btn{
+                padding: 10px;
+                width: 80%;
+            }
+            @media(max-width:430px){
+                .parent-container{ 
+                    flex-direction: column;
+                    width: 90%;
+            
+                }
+                .form-field input{
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form class="parent-container" action="login.html">
+            <h2 class="title">Registration</h2>
+            <div class="form-field">
+                <input type="email" required name="email" placeholder="enter your email"/>
+            </div>
+            <div class="form-field">
+                <input type="password" required name="password" placeholder="enter your password"/>
+            </div>
+            <div class="form-field">
+                <input type="password" required name="confirm_password" placeholder="confirm your password"/>
+            </div>
+            <div class="form-field">
+                <input type="number" required name="phone_number" placeholder="enter your number"/>
+            </div>
+            <button class="form-btn">submit</button>
+            <p>
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </form>
+    </body>
+</html>
